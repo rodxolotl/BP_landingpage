@@ -1,0 +1,13 @@
+apiVersion: apps/v1beta2
+kind: Service
+apiVersion: v1
+metadata:
+  name: landing-service
+spec:
+  type: ClusterIP
+  selector:
+    app: landing
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
