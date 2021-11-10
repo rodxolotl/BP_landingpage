@@ -15,7 +15,7 @@ spec:
         app: landing
     spec:
       containers:
-      - name: landing
-        image: rodxolotl/landing:bpDev0
+      - name: landing-deployment
+        image: rodxolotl/landing:1.0.0
         ports:
         - containerPort: 80
